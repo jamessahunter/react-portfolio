@@ -22,18 +22,6 @@ export default function PortfolioContainer() {
     return <Contact />;
   };
 
-  // const renderPage = () => {
-  //   switch (currentPage) {
-  //     case 'Home':
-  //       return <Home />;
-  //     case 'About':
-  //       return <About />;
-  //     case 'Blog':
-  //       return <Blog />;
-  //     default:
-  //       return <Contact />;
-  //   }
-  // };
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (

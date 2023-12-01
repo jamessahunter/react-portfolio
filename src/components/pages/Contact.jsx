@@ -1,20 +1,66 @@
-export default function Contact() {
+import { useState } from 'react';
+
+export default function Contact(props) {
+
+  const [nameInput, setNameInput] = useState('');
+  const [emailInput, setEmailInput] = useState('');
+  const [messageInput, setMessageInput] = useState('');
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+
+    props.onSubmit({
+      // id: Math.random(Math.floor() * 1000),
+      // text: input,
+      // eagerness: eagerness,
+    });
+
+    setNameInput('');
+    setEmailInput('');
+    setMessageInput('');
+  };
+
+
+  const handleNameChange = (e) => {
+    setNameInput(e.target.value);
+  };
+  const handleEmailChange = (e) => {
+    setEmailInput(e.target.value);
+  }
+  const handleMessageChange = (e) => {
+    setMessageInput(e.target.value);
+  }
+
+
   return (
     <div>
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <input
+          type="text"
+          placeholder="John Doe"
+          value={nameInput}
+          name="text"
+          className="name-input"
+          onChange={handleNameChange}
+        ></input>
+          <input
+          type="text"
+          placeholder="jonh@example.com"
+          value={emailInput}
+          name="email"
+          className="email-input"
+          onChange={handleEmailChange}
+        ></input>
+                <input
+          type="text"
+          placeholder=""
+          value={messageInput}
+          name="message"
+          className="message-input"
+          onChange={handleMessageChange}
+        ></input>
+        <button className="contact-button">Send</button>
+      </form>
     </div>
   );
 }
