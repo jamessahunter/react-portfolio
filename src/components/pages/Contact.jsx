@@ -7,13 +7,20 @@ export default function Contact(props) {
   const [messageInput, setMessageInput] = useState('');
   const handleSubmit = (e) => {
     e.preventDefault();
+    // console.log(e.target)
+    console.log(nameInput);
+    console.log("works")
 
+    const emailRegex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
 
-    props.onSubmit({
+    if(!emailRegex.test(emailInput)){
+      alert("Not a valid email");
+    }
+    // props.onSubmit({
       // id: Math.random(Math.floor() * 1000),
       // text: input,
       // eagerness: eagerness,
-    });
+    // });
 
     setNameInput('');
     setEmailInput('');
