@@ -27,6 +27,13 @@ export default function Contact(props) {
     setMessageInput('');
   };
 
+  const handleBlur = (e) => {
+    console.log(e.target.value)
+    if(!e.target.value){
+      alert('This field is required')
+    }
+  }
+
 
   const handleNameChange = (e) => {
     setNameInput(e.target.value);
@@ -48,6 +55,7 @@ export default function Contact(props) {
           value={nameInput}
           name="text"
           className="name-input"
+          onBlur={handleBlur}
           onChange={handleNameChange}
         ></input>
           <input
@@ -56,6 +64,7 @@ export default function Contact(props) {
           value={emailInput}
           name="email"
           className="email-input"
+          onBlur={handleBlur}
           onChange={handleEmailChange}
         ></input>
                 <input
@@ -64,6 +73,7 @@ export default function Contact(props) {
           value={messageInput}
           name="message"
           className="message-input"
+          onBlur={handleBlur}
           onChange={handleMessageChange}
         ></input>
         <button className="contact-button">Send</button>
