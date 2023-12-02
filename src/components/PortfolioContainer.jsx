@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import NavTabs from './NavTabs';
+import Header from './Header';
 import Home from './pages/Home';
 import About from './pages/About';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
+import Footer from './Footer';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -26,10 +28,12 @@ export default function PortfolioContainer() {
 
   return (
     <div>
+      <Header></Header>
       {/* We are passing the currentPage from state and the function to update it */}
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Here we are calling the renderPage method which will return a component  */}
       <main className="mx-3">{renderPage()}</main>
+      <Footer></Footer>
     </div>
   );
 }
