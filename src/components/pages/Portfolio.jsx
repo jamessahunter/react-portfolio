@@ -19,12 +19,50 @@ const projects = [
     alt: 'screenshot of what to watch website',
     technologies: 'HTML ,CSS, JS'
   },
+  {
+    id: 3,
+    title:'Place Holder 1', 
+    deployed:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    repo:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    image:'src/assets/placeholder.png',
+    alt: 'placeholder image',
+    technologies: 'HTML ,CSS, JS'
+  },
+  {
+    id: 4,
+    title:'Place Holder 2', 
+    deployed:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    repo:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    image:'src/assets/placeholder.png',
+    alt: 'placeholder image',
+    technologies: 'HTML ,CSS, JS'
+  },
+  {
+    id: 5,
+    title:'Place Holder 3', 
+    deployed:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    repo:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    image:'src/assets/placeholder.png',
+    alt: 'placeholder image',
+    technologies: 'HTML ,CSS, JS'
+  },
+  {
+    id: 6,
+    title:'Place Holder 4', 
+    deployed:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    repo:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    image:'src/assets/placeholder.png',
+    alt: 'placeholder image',
+    technologies: 'HTML ,CSS, JS'
+  },
 ]
 
 
 export default function Portfolio() {
   return (
+    <div>
+    <h2>Portfolio</h2>
     <Project projects={projects} /> 
-
+    </div>
   );
 }

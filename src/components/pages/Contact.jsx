@@ -53,6 +53,7 @@ export default function Contact(props) {
 
   return (
     <div>
+      <h2>Send me a message</h2>
       <form className="contact-form" onSubmit={handleSubmit}>
         <label for="name" className='form-label'>Name</label>
         <input
@@ -87,7 +88,7 @@ export default function Contact(props) {
         ></textarea>
         {emailMessage && <div>Not a valid email</div>}
         {blankMessage && <div> {box} is required</div>}
-        <button className="contact-button">Send</button>
+        <button type='button' className="contact-button btn btn-outline-primary">Send</button>
       </form>
     </div>
   );
