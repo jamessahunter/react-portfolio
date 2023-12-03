@@ -14,13 +14,6 @@ export default function Contact(props) {
     console.log(nameInput);
     console.log("works")
 
-
-    // props.onSubmit({
-      // id: Math.random(Math.floor() * 1000),
-      // text: input,
-      // eagerness: eagerness,
-    // });
-
     setNameInput('');
     setEmailInput('');
     setMessageInput('');
@@ -61,33 +54,37 @@ export default function Contact(props) {
   return (
     <div>
       <form className="contact-form" onSubmit={handleSubmit}>
+        <label for="name" className='form-label'>Name</label>
         <input
           type="text"
           placeholder="John Doe"
           value={nameInput}
           name="name"
-          className="name-input"
+          className="name-input form-control from-control-sm"
           onBlur={handleBlur}
           onChange={handleNameChange}
         ></input>
+          <label for="email" className='form-label'>Email</label>
           <input
           type="text"
           placeholder="jonh@example.com"
           value={emailInput}
           name="email"
-          className="email-input"
+          className="email-input form-control from-control-sm"
           onBlur={handleBlur}
           onChange={handleEmailChange}
         ></input>
-                <input
+                <label for="message" className='form-label'>Message</label>
+                <textarea
           type="text"
           placeholder=""
           value={messageInput}
           name="message"
-          className="message-input"
+          className="message-input form-control"
           onBlur={handleBlur}
           onChange={handleMessageChange}
-        ></input>
+          rows="5"
+        ></textarea>
         {emailMessage && <div>Not a valid email</div>}
         {blankMessage && <div> {box} is required</div>}
         <button className="contact-button">Send</button>
