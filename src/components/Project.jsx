@@ -1,13 +1,15 @@
 function Project(props) {
+    console.log(props);
     return (
+        <div>
+      {props.projects.map(project => (
         <figure>
-        <a href="https://majority-matters-080972dae02f.herokuapp.com/" target="_blank"><img src="assets/images/majority matters.png" alt="screenshot of majority matters website"/></a>
-            <pre><figcaption>
-Majority Matters
-JS, Node, NPM
-        </figcaption></pre>
-    </figure>
-    )
-}
-
-export default Project
+          <a href={project.deployed} target="_blank"><img src={project.image} alt={project.alt}/></a>
+          <pre><figcaption> {project.title} {project.technologies} </figcaption></pre>
+        </figure>
+      ))}
+      </div>
+    );
+  }
+  
+  export default Project;
