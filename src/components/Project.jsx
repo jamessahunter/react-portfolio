@@ -20,7 +20,7 @@ function Project(props) {
         {props.projects.map(project => (
         <div
         key={project.title}
-        className="image-container container-lg col-xl-4 my-2 mx-auto p-2 col-lg-6 col-md-12 d-flex flex-column justify-content-center align-items-center"           
+        className="image-container container-lg col-xl-6 my-2 mx-auto p-2 col-lg-12 d-flex flex-column justify-content-center align-items-center"           
         onMouseEnter={()=>handleMouseEnter(project.title)}
         onMouseLeave={handleMouseLeave}
         style={{

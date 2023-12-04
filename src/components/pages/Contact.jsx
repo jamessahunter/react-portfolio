@@ -52,7 +52,8 @@ export default function Contact(props) {
 
 
   return (
-    <div>
+    <div className='row offset-md-2'>
+      <div className='col-lg-6 col-md-9 col-sm-12'>
       <h2>Send me a message</h2>
       <form className="contact-form" onSubmit={handleSubmit}>
         <label for="name" className='form-label'>Name</label>
@@ -88,8 +89,9 @@ export default function Contact(props) {
         ></textarea>
         {emailMessage && <div>Not a valid email</div>}
         {blankMessage && <div> {box} is required</div>}
-        <button type='button' className="contact-button btn btn-outline-primary">Send</button>
+        <button type='button' className="contact-button btn btn-outline-info">Send</button>
       </form>
+      </div>
     </div>
   );
 }

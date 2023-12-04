@@ -1,7 +1,7 @@
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <div className="col-9">
+    <div className="col-8">
     <ul className="nav nav-underline justify-content-end e-2">
 
       <li className="nav-item">
