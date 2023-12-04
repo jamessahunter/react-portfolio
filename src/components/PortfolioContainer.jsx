@@ -28,12 +28,12 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div className='container'>
-      <div className='row'>
+    <div className='container-fluid'>
+      <header className='row'>
         <Header></Header>
         <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      </div>
-      <main className="mx-3">{renderPage()}</main>
+      </header>
+      <main className="">{renderPage()}</main>
       <Footer></Footer>
     </div>
   );
