@@ -1,6 +1,7 @@
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
+    //changes page and styling based off which page is selected
     <div className="col-8">
     <ul className="nav nav-underline justify-content-end e-2">
 

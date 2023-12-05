@@ -63,6 +63,7 @@ const projects = [
 
 export default function Portfolio() {
   return (
+    //sends the array of projects to project component
     <div className="project">
     <h2 className="offset-1 p-2">Portfolio</h2>
     <Project projects={projects} /> 

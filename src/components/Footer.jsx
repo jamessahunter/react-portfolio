@@ -4,6 +4,7 @@ import linkedInLogo from '../assets/LI-In-Bug.png'
 
 function Footer(){
     return(
+        //links to oustide sites from imported images
         <footer className="fixed-bottom footer">
         <nav>
             <ul className="row justify-content-around align-items-center text-center">

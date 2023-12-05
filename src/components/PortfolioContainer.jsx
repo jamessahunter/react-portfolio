@@ -1,3 +1,4 @@
+//imports states and all other pages and components
 import { useState } from 'react';
 import NavTabs from './NavTabs';
 import Header from './Header';
@@ -8,9 +9,10 @@ import Contact from './pages/Contact';
 import Footer from './Footer';
 
 export default function PortfolioContainer() {
+  //sets page to about
   const [currentPage, setCurrentPage] = useState('About');
 
-  // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
+  // sets page to the nav bar item that is clicked on
   const renderPage = () => {
 
     if (currentPage === 'About') {
@@ -29,8 +31,10 @@ export default function PortfolioContainer() {
 
   return (
     <div className='container-fluid'>
+      {/* calls header nav bar the page selected and the footer */}
       <header className='row'>
         <Header></Header>
+        {/* listens for page change */}
         <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       </header>
       <main>{renderPage()}</main>

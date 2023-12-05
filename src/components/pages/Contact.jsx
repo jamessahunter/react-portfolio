@@ -3,7 +3,7 @@ import emailjs from 'emailjs-com';
 
 export default function Contact(props) {
 
-
+//has from for user to send message to my email
   emailjs.init('nhvfS8gWUWsTR-aua');
   const [nameInput, setNameInput] = useState('');
   const [emailInput, setEmailInput] = useState('');
@@ -31,7 +31,7 @@ export default function Contact(props) {
 
 
   };
-
+//checks if user has left a box empty
   const handleBlur = (e) => {
     if(!e.target.value){
       setBox(e.target.name);
@@ -45,6 +45,7 @@ export default function Contact(props) {
   const handleNameChange = (e) => {
     setNameInput(e.target.value);
   };
+  //checks a valid email is entered
   const handleEmailChange = (e) => {
     const emailRegex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
 

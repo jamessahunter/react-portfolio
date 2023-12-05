@@ -2,6 +2,7 @@ import resume from '../../assets/James-Hunter-Resume.png'
 
 export default function Resume() {
   return (
+    //shows resume and allows for one to be downloaded
     <div className="offset-1 resume">
       <h1 className='p-2'>Resume</h1>
       <div className="row">
@@ -27,7 +28,6 @@ export default function Resume() {
           </ul>
         </div>
         <div className="col-lg-6 d-none d-md-block resumePng">
-        {/* <iframe src="JamesHunterResume.docx.html" width="100%" height="600px"></iframe> */}
           <img src={resume}></img>
         </div>
       </div>

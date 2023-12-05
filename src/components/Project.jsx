@@ -2,13 +2,11 @@ import React, { useState } from 'react';
 import gitHubLogo from '../assets/github-mark.png'
 
 function Project(props) {
-    console.log(props);
-
+  //uses props to import project data from portfolio
     const [hoveredProject, setHoveredProject] = useState(null);
 
     const handleMouseEnter = (title) => {
-      console.log('hover')
-      console.log(title)
+
       setHoveredProject(title);
     };
   
@@ -18,25 +16,27 @@ function Project(props) {
   
     return (
         <div className="row justify-content-center">
+          {/* goes through the array of projects */}
         {props.projects.map(project => (
         <div
         key={project.title}
         className="image-container container-lg col-xl-6 my-2 mx-auto p-2 col-lg-12 d-flex flex-column justify-content-center align-items-center"           
+        //listens for mouse hover over project
         onMouseEnter={()=>handleMouseEnter(project.title)}
         onMouseLeave={handleMouseLeave}
         style={{
-          // filter: hoveredProject === project.title ? 'brightness(30%)' : 'none',
           transition: 'filter 0.3s ease',
           position: 'relative'
         }}
         >
           <img src={project.image} alt={project.alt}/>
+          {/* adds effect when hover over */}
           {hoveredProject === project.title && (
                     <div className="image-overlay position-absolute d-flex justify-content-around align-self-center"
                     style={{
-                      top: '50%', // Adjust the top position to center the overlay vertically
-                      left: '50%', // Adjust the left position to center the overlay horizontally
-                      transform: 'translate(-50%, -50%)', // Use translate to center the overlay precisely
+                      top: '50%', 
+                      left: '50%', 
+                      transform: 'translate(-50%, -50%)',
                     }}>
                     <div className='row align-self-center'>
                     <a className='col-4 title' href={project.deployed} target="_blank">{project.title}</a>

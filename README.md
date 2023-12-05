@@ -17,7 +17,7 @@ This project was made for me to show the work I've done as a Full Stack Develope
 
 ## Usage
  
-![Usage Example]()
+![Usage Example](./src/assets/James%20Hunter%20Portfolio.gif)
 
 ## Learning Points
 
