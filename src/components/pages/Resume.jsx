@@ -1,10 +1,14 @@
+// import resumeDl from '../../assets/JamesHunterResume.docx'
+import resume from '../../assets/James-Hunter-Resume.png'
+// '../../assets/JamesHunterResume.docx.html'
+
 export default function Resume() {
   return (
-    <div className="offset-1">
+    <div className="offset-1 resume">
       <h1 className='p-2'>Resume</h1>
       <div className="row">
         <div className="col-lg-3 col-md-12">
-          <a href="/src/assets/James Hunter Resume.docx" className="resume-dl"download>Click to download Resume</a>
+          <a href={resume} className="resume-dl"download>Click to download Resume</a>
           <h2>Front End</h2>
           <ul className="frontend">
             <li>HTML</li>
@@ -24,8 +28,8 @@ export default function Resume() {
             <li>React</li>
           </ul>
         </div>
-        <div className="col-lg-6 d-none d-md-block">
-          <iframe src="/src/assets/JamesHunterResume.docx.html" width="100%" height="600px"></iframe>
+        <div className="col-lg-6 d-none d-md-block resumePng">
+          <img src={resume}></img>
         </div>
       </div>
     </div>
