@@ -6,7 +6,7 @@ export default function Resume() {
       <h1 className='p-2'>Resume</h1>
       <div className="row">
         <div className="col-lg-3 col-md-12">
-          <a href={resume} className="resume-dl"download>Click to download Resume</a>
+          <a href="JamesHunterResume.docx" className="resume-dl"download>Click to download Resume</a>
           <h2>Front End</h2>
           <ul className="frontend">
             <li>HTML</li>
@@ -27,7 +27,8 @@ export default function Resume() {
           </ul>
         </div>
         <div className="col-lg-6 d-none d-md-block resumePng">
-          <img src={resume}></img>
+        <iframe src="JamesHunterResume.docx.html" width="100%" height="600px"></iframe>
+          {/* <img src={resume}></img> */}
         </div>
       </div>
     </div>

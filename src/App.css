@@ -137,14 +137,11 @@ img {
   font-size: large;
 } 
 
-.resumePng img{
+/* .resumePng img{
   height: 900px;
   width: auto;
-}
+} */
 
-.resume{
-  min-height: 125vh;
-}
 @media screen and (max-width: 1200px) {
   .project{
     min-height: 230vh;
