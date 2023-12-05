@@ -4,7 +4,7 @@ export default function Resume() {
       <h1 className='p-2'>Resume</h1>
       <div className="row">
         <div className="col-lg-3 col-md-12">
-          <a href="src/assets/James Hunter Resume.docx" className="resume-dl"download>Click to download Resume</a>
+          <a href="./src/assets/James Hunter Resume.docx" className="resume-dl"download>Click to download Resume</a>
           <h2>Front End</h2>
           <ul className="frontend">
             <li>HTML</li>
@@ -25,7 +25,7 @@ export default function Resume() {
           </ul>
         </div>
         <div className="col-lg-6 d-none d-md-block">
-          <iframe src="src/assets/JamesHunterResume.docx.html" width="100%" height="600px"></iframe>
+          <iframe src="./src/assets/JamesHunterResume.docx.html" width="100%" height="600px"></iframe>
         </div>
       </div>
     </div>

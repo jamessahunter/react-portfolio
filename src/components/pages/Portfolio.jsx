@@ -6,7 +6,7 @@ const projects = [
     title:'Majority Matters', 
     deployed:'https://majority-matters-080972dae02f.herokuapp.com/',
     repo:'https://github.com/jamessahunter/majority-matters',
-    image:'src/assets/majority matters.png',
+    image:'./src/assets/majority matters.png',
     alt: 'screenshot of majority matters website',
     technologies: 'JS, Node, NPM'
   },
@@ -15,7 +15,7 @@ const projects = [
     title:'What to Watch', 
     deployed:'https://jamessahunter.github.io/What-to-watch',
     repo:'https://github.com/jamessahunter/What-to-watch',
-    image:'src/assets/what-to-watch.png',
+    image:'./src/assets/what-to-watch.png',
     alt: 'screenshot of what to watch website',
     technologies: 'HTML ,CSS, JS'
   },
@@ -24,7 +24,7 @@ const projects = [
     title:'Place Holder 1', 
     deployed:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     repo:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-    image:'src/assets/placeholder.png',
+    image:'./src/assets/placeholder.png',
     alt: 'placeholder image',
     technologies: 'HTML ,CSS, JS'
   },
@@ -33,7 +33,7 @@ const projects = [
     title:'Place Holder 2', 
     deployed:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     repo:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-    image:'src/assets/placeholder.png',
+    image:'./src/assets/placeholder.png',
     alt: 'placeholder image',
     technologies: 'HTML ,CSS, JS'
   },
@@ -42,7 +42,7 @@ const projects = [
     title:'Place Holder 3', 
     deployed:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     repo:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-    image:'src/assets/placeholder.png',
+    image:'./src/assets/placeholder.png',
     alt: 'placeholder image',
     technologies: 'HTML ,CSS, JS'
   },
@@ -51,7 +51,7 @@ const projects = [
     title:'Place Holder 4', 
     deployed:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     repo:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-    image:'src/assets/placeholder.png',
+    image:'./src/assets/placeholder.png',
     alt: 'placeholder image',
     technologies: 'HTML ,CSS, JS'
   },
