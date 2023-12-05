@@ -1,6 +1,6 @@
 import gitHubLogo from '../assets/github-mark.png'
 import stackoverflowLogo from '../assets/logo-stackoverflow.png'
-import linkedInLogo from '../assets/LI-In-bug.png'
+// import linkedInLogo from '../assets/LI-In-bug.png'
 
 function Footer(){
     return(

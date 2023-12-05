@@ -1,6 +1,4 @@
-// import resumeDl from '../../assets/JamesHunterResume.docx'
 import resume from '../../assets/James-Hunter-Resume.png'
-// '../../assets/JamesHunterResume.docx.html'
 
 export default function Resume() {
   return (
