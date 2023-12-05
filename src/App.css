@@ -58,6 +58,14 @@ img {
   height: 300px;
 }
 
+.frontend, .backend{
+  font-size: 24px;
+}
+
+.frontend li, .backend li{
+  margin: 10px;
+}
+
 .about img{
   width: 200px;
   height: auto;
