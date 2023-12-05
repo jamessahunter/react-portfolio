@@ -60,7 +60,7 @@ const projects = [
 
 export default function Portfolio() {
   return (
-    <div>
+    <div className="project">
     <h2 className="offset-1 p-2">Portfolio</h2>
     <Project projects={projects} /> 
     </div>

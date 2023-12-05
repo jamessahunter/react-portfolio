@@ -1,29 +1,26 @@
 main {
-  /* background-color: #7EC4CF; */
   font-family: 'Teko', sans-serif;
-  background: linear-gradient(to bottom, #829399, #c1c1c1); /* Replace with your desired colors */
-  min-height: calc(100vh - 100px);
+  background: linear-gradient(to bottom, #829399, #c1c1c1); 
   padding: 0px;
-  /* width: 100vw; */
-  overflow-y: hidden;
-}
-
-.container-fluid{
-  /* padding: 0px; */
-  padding-right: 0px;
-  padding-left: 0px;
-}
-
-.container {
-    /* min-height: 100vh; */
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+  min-height: calc(100vh - 90px);
 
 }
 
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-  padding-right: 0px;
+.container-fluid {
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.project{
+  min-height: 125vh;
+}
+
+label.form-label{
+  font-size: 24px;
+}
+
+.about p{
+  padding: 10px;
 }
 
 h1, .h1, h2, .h3{ 
@@ -39,16 +36,14 @@ header{
   padding: 10px 0px;
   background-color: #26547C;
 }
+
 footer{
-  /* margin-top: auto; */
   padding-top: 16px;
   background-color: #26547C;
-  /* margin-top: 16px; */
-  
 }
 
 .logo{
-  width: 50px !important;
+  width: 50px;
 }
 
 .nav{
@@ -61,12 +56,15 @@ footer{
 }
 
 .nav-link{
-  color: greenyellow;
+  color: #A499B3;
 }
 
-.nav-link.active .nav-link:hover{
-  color: red;
-  /* font-size: 12px; */
+a.nav-link:hover{
+  color: #829399;
+}
+
+a.nav-link.active{
+  color:#292E1E;
 }
 
 ul {
@@ -90,6 +88,7 @@ img {
   width: 200px;
   height: auto;
 }
+
 .footer img{
   width: 50px;
   height: auto;
@@ -108,9 +107,6 @@ img {
   background-color: rgb(0, 0, 0);
   font-size: 24px;
   color: white;
-
-  /* opacity: .5;
-  transition: opacity 0.3s ease; */
 }
 
 .image-overlay img{
@@ -130,9 +126,27 @@ img {
 }
 
 .btn-outline-info{
-  /* --bs-btn-color:red; */
-  color: #FFFFFF; /* text color */
-  background-color: #FF0000; /* background color */
-  border-color: #FF0000; /* border color */
+  color: #FFFFFF; 
+  background-color: #A499B3;
+  border-color: #A499B3; 
 }
 
+.btn-outline-info:hover{
+  background-color:#26547C;
+  border: #26547C;
+  font-size: large;
+} 
+
+@media screen and (max-width: 1200px) {
+  .project{
+    min-height: 230vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  img, .image-overlay img{
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+}
