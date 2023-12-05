@@ -62,7 +62,7 @@ export default function Contact(props) {
   return (
     <div className='row offset-md-2'>
       <div className='col-lg-6 col-md-9 col-sm-12 m-2'>
-      <h2>Send me a message</h2>
+      <h2 className='p-2'>Send me a message</h2>
       <form className="contact-form" onSubmit={handleSubmit}>
         <label for="name" className='form-label'>Name</label>
         <input

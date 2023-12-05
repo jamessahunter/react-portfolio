@@ -61,7 +61,7 @@ const projects = [
 export default function Portfolio() {
   return (
     <div>
-    <h2 className="offset-1">Portfolio</h2>
+    <h2 className="offset-1 p-2">Portfolio</h2>
     <Project projects={projects} /> 
     </div>
   );
