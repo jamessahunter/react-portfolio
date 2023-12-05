@@ -27,8 +27,8 @@ export default function Resume() {
           </ul>
         </div>
         <div className="col-lg-6 d-none d-md-block resumePng">
-        <iframe src="JamesHunterResume.docx.html" width="100%" height="600px"></iframe>
-          {/* <img src={resume}></img> */}
+        {/* <iframe src="JamesHunterResume.docx.html" width="100%" height="600px"></iframe> */}
+          <img src={resume}></img>
         </div>
       </div>
     </div>
