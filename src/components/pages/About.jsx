@@ -1,10 +1,12 @@
+import portrait from '../../assets/portrait.jpg'
+
 export default function About() {
   return (
     <div className="about">
       <h1 className="offset-1 p-2">About Me</h1>
       <div className="row align-items-center">
         <div className="col-xl-3 col-lg-12 align-self-center">
-      <img src="/src/assets/portrait.jpg" alt="photo of myself (James Hunter)" className="mx-auto d-block"/>
+      <img src={portrait} alt="photo of myself (James Hunter)" className="mx-auto d-block"/>
       </div>
       <div className="col-xl-9 col-lg-12">
       <p>
