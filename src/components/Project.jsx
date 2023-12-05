@@ -39,7 +39,7 @@ function Project(props) {
                     }}>
                     <div className='row align-self-center'>
                     <a className='col-4 title' href={project.deployed} target="_blank">{project.title}</a>
-                    <a className="col-4" target="_blank" href={project.repo}><img src="./src/assets/github-mark.png" alt='github logo' ></img></a>
+                    <a className="col-4" target="_blank" href={project.repo}><img src="/src/assets/github-mark.png" alt='github logo' ></img></a>
                     <p className="col-4"> {project.technologies}</p>
                     </div>
                   </div>
