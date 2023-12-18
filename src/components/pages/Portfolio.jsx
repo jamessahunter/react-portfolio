@@ -2,6 +2,7 @@ import Project from "../Project";
 import majorityMatters from "../../assets/majority matters.png"
 import whatToWatch from "../../assets/what-to-watch.png"
 import placeHolder from "../../assets/placeholder.png"
+import readZen from "../../assets/ReadZen.png"
 
 const projects = [
   {
@@ -11,7 +12,7 @@ const projects = [
     repo:'https://github.com/jamessahunter/majority-matters',
     image:majorityMatters,
     alt: 'screenshot of majority matters website',
-    technologies: 'JS, Node, NPM'
+    technologies: 'JS, Node, NPM, Express'
   },
   {
     id: 2,
@@ -24,40 +25,40 @@ const projects = [
   },
   {
     id: 3,
-    title:'Place Holder 1', 
-    deployed:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-    repo:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-    image:placeHolder,
-    alt: 'placeholder image',
-    technologies: 'HTML ,CSS, JS'
+    title:'ReadZen', 
+    deployed:'https://read-zen.onrender.com/',
+    repo:'https://github.com/jamessahunter/ReadZen',
+    image:readZen,
+    alt: 'screen shot of readzen website',
+    technologies: 'MERN Stack'
   },
-  {
-    id: 4,
-    title:'Place Holder 2', 
-    deployed:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-    repo:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-    image:placeHolder,
-    alt: 'placeholder image',
-    technologies: 'HTML ,CSS, JS'
-  },
-  {
-    id: 5,
-    title:'Place Holder 3', 
-    deployed:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-    repo:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-    image:placeHolder,
-    alt: 'placeholder image',
-    technologies: 'HTML ,CSS, JS'
-  },
-  {
-    id: 6,
-    title:'Place Holder 4', 
-    deployed:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-    repo:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-    image:placeHolder,
-    alt: 'placeholder image',
-    technologies: 'HTML ,CSS, JS'
-  },
+  // {
+  //   id: 4,
+  //   title:'Place Holder 2', 
+  //   deployed:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+  //   repo:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+  //   image:placeHolder,
+  //   alt: 'placeholder image',
+  //   technologies: 'HTML ,CSS, JS'
+  // },
+  // {
+  //   id: 5,
+  //   title:'Place Holder 3', 
+  //   deployed:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+  //   repo:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+  //   image:placeHolder,
+  //   alt: 'placeholder image',
+  //   technologies: 'HTML ,CSS, JS'
+  // },
+  // {
+  //   id: 6,
+  //   title:'Place Holder 4', 
+  //   deployed:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+  //   repo:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+  //   image:placeHolder,
+  //   alt: 'placeholder image',
+  //   technologies: 'HTML ,CSS, JS'
+  // },
 ]
 
 
